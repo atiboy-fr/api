@@ -10,7 +10,7 @@ function Edit() {
     axios.get('https://jsonplaceholder.typicode.com/users/'+id)
     .then(res => setData(res.data))
     .catch(err => console.log(err))
-  }, [])
+  },)
 
   function handleSubmit(event) {
     event.preventDefault()
